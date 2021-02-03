@@ -1,0 +1,33 @@
+<!--pages/home/index.wxml-->
+<view>
+	<view class="home-top">
+    <view class="home-swiper">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{activecolor}}">
+        <block wx:for="{{imgUrls}}" wx:key="*this" >
+          <swiper-item>
+              <image src="{{item}}" style="width:100%;height:200px" class="slide-image" mode="widthFix"  />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+
+  <view class="index-link">
+    <navigator url="../home/imgshow/imgshow" class="item-link">跳到图片页面</navigator>
+    <navigator url="../tapevent/index" class="item-link">跳转到组件页面</navigator>
+    <navigator url="../navigate/index" class="item-link">跳转到路由页面</navigator>
+    <navigator url="../detail/index?param1=111&parma2=222" class="item-link">携带数据跳转页面</navigator>
+
+  </view>
+  <view>
+    <map
+      id="myMap"
+      style="width: 100%; height: 300px;"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      markers="{{markers}}"
+      covers="{{covers}}"
+      show-location
+    ></map>
+  </view>
+</view>

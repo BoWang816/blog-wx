@@ -1,0 +1,19 @@
+/* pages/home/index.wxss */
+.item-link{
+  margin: 20px;
+  padding:10px 15px;
+  background-color: #4ea6ec;
+  color: #fff;
+  border-radius: 4px;
+}
+.flex-box{
+  display: flex;
+}
+
+.list-item{
+  flex: 1;
+  background-color: #82c2f7;
+  height: 100px;
+  text-align: center;
+  border:1px solid #bdd2f8;
+}

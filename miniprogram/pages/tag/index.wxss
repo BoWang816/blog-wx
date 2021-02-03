@@ -1,0 +1,8 @@
+/* pages/tag/index.wxss */
+.weui-grid{
+  width: 20%;
+}
+.weui-grid__icon {
+  width: 44px;
+  height: 40px;
+}

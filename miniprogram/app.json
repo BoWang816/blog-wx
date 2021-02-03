@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/home/imgshow/imgshow",
+    "pages/tag/index",
+    "pages/time/index",
+    "pages/about/index",
+    "pages/tapevent/index",
+    "pages/navigate/index",
+    "pages/detail/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "恪晨的博客",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#13227a",
+    "backgroundColor": "#ffffff",
+    "list": [{
+        "pagePath": "pages/home/index",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tag/index",
+        "iconPath": "image/tag.png",
+        "selectedIconPath": "image/tag-active.png",
+        "text": "标签"
+      },
+      {
+        "pagePath": "pages/time/index",
+        "iconPath": "image/time.png",
+        "selectedIconPath": "image/time-active.png",
+        "text": "时间"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/user-active.png",
+        "text": "关于"
+      }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

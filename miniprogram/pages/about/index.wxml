@@ -1,0 +1,8 @@
+<!--pages/about/index.wxml-->
+<import src="/pages/common/foot.wxml" />
+<import src="/pages/common/head.wxml" />
+
+<template is="head" data="{{...headeInfo}}"/>
+<text>我是关于页面</text>
+<template is="foot" />
+

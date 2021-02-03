@@ -1,0 +1,28 @@
+<!--pages/navigate/index.wxml-->
+<view>
+    <view class="link-item">
+        <Text>保留当前页面，跳转到应用内的某个页面。但是不能跳到 tabbar 页面</Text>
+        <button bindtap="navigateTo">保留页面并跳转</button>
+    </view>
+    
+    <view class="link-item">
+        <Text>关闭当前页面，跳转到应用内的某个页面。但是不允许跳转到 tabbar 页面</Text>
+        <button bindtap="redirectTo">关闭当前页面跳转</button>
+    </view>
+
+    <view class="link-item">
+        <Text>跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面</Text>
+        <button bindtap="switchTab">跳转到组件Tab页</button>
+    </view>
+
+    <view class="link-item">
+        <Text>关闭当前页面，返回上一页面或多级页面</Text>
+        <button bindtap="navigateBack">返回上一页</button>
+    </view>
+
+    <view class="link-item">
+        <Text>关闭所有页面，打开到应用内的某个页面</Text>
+        <button bindtap="reLaunch">跳转到标签页</button>
+    </view>
+</view>
+
