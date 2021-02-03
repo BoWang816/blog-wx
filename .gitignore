@@ -12,3 +12,7 @@ $RECYCLE.BIN/
 .idea
 # Node.js
 node_modules/
+cloudfunctions/callback/node_modules
+cloudfunctions/echo/node_modules
+cloudfunctions/login/node_modules
+cloudfunctions/openapi/node_modules
