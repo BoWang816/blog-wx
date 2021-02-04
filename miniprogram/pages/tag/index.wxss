@@ -1,8 +1,8 @@
 /* pages/tag/index.wxss */
-.weui-grid{
-  width: 20%;
+.tag-area {
+  padding: 15rpx;
 }
-.weui-grid__icon {
-  width: 44px;
-  height: 40px;
+.tag-item {
+  margin: 15rpx;
+  font-size: 16px;
 }

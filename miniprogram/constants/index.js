@@ -1,0 +1,1 @@
+export const API_DOMAIN = 'https://blog.wangboweb.site/api/';

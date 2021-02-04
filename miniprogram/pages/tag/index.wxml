@@ -1,11 +1,34 @@
 <!--pages/tag/index.wxml-->
-<view class="page__bd">
-	<view class="weui-grids">
-		<block wx:for="{{grids}}" wx:for-item="grid" wx:key="*this">
-			<navigator url="" class="weui-grid" hover-class="weui-grid_active">
-				<image class="weui-grid__icon" src="{{grid.imgurl}}" />
-				<view class="weui-grid__label">{{grid.title}}</view>
-			</navigator>
+<view class="tag-area">
+	<view>
+		<Text>标签：</Text>
+		<block wx:for="{{tags}}" 
+			wx:for-item="tag"
+			wx:key="tag">
+			
+			<i-badge count="{{tag.count}}" overflow-count="100">
+				<view class="demo-badge">
+					<i-tag 
+						name="tag.name" 
+						color="{{tag.color}}" 
+						type="border"
+						i-class="tag-item" >
+					{{tag.name}}
+					</i-tag>
+				</view>
+			</i-badge>
 		</block>
+	</view>
+	<view>
+		<Text>分类：</Text>
+		<i-tag wx:for="{{categories}}" 
+			wx:for-item="tag"
+			wx:key="tag"
+			name="tag.name" 
+			color="{{tag.color}}" 
+			type="border"
+			i-class="tag-item" >
+			{{tag.name}} {{tag.count}}
+		</i-tag>
 	</view>
 </view>

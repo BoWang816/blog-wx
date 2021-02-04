@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "i-tag": "../../UIComponents/tag/index",
+    "i-badge": "../../UIComponents/badge/index"
+  }
 }
