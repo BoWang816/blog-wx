@@ -1,2 +1,4 @@
 <!--pages/home/index.wxml-->
 <text>我是首页</text>
+
+<footer></footer>
