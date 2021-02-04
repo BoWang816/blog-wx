@@ -1,13 +1,11 @@
 {
   "pages": [
     "pages/home/index",
-    "pages/home/imgshow/imgshow",
     "pages/tag/index",
     "pages/time/index",
     "pages/about/index",
-    "pages/tapevent/index",
-    "pages/navigate/index",
-    "pages/detail/index"
+    "pages/tagDetail/index",
+    "pages/articleDetail/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

@@ -1,4 +1,4 @@
-// pages/navigate/index.js
+// pages/tagDetail/index.js
 Page({
 
     /**
@@ -8,41 +8,11 @@ Page({
 
     },
 
-    navigateTo() {
-        wx.navigateTo({
-          url: '/pages/tapevent/index'
-        })
-    },
-
-    switchTab() {
-        wx.switchTab({
-            url: "/pages/home/index",
-        })
-    },
-
-    redirectTo() {
-        wx.redirectTo({
-            url: '/pages/tapevent/index'
-        })
-    },
-
-    navigateBack() {
-        wx.navigateBack({
-            delta: 1
-        })
-    },
-
-    reLaunch() {
-        wx.reLaunch({
-          url: '/pages/tag/index',
-        });
-    },
-
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        console.log(options);
+
     },
 
     /**

@@ -1,4 +1,0 @@
-/* pages/home/imgshow/imgshow.wxss */
-.imglist .imgitem{
-  width: 100%;
-}

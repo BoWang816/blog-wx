@@ -1,8 +1,0 @@
-<!--pages/home/imgshow/imgshow.wxml-->
-<view class="imglist">
-  <image class="imgitem" mode="widthFix" src="/image/bg.png"></image>
-  <view>{{username}}，您已登录，欢迎</view>
-  <navigator id="item-{{id}}" class="{{itemclass}}" url="{{itemurl}}" >
-  <image style="width: {{imagewidth}}" mode="{{imagemode}}" src="{{imagesrc}}"></image>
-</navigator>
-</view>

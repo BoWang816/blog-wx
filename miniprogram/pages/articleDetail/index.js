@@ -1,5 +1,6 @@
-// pages/detail/index.js
+// pages/articleDetail/index.js
 Page({
+
     /**
      * 页面的初始数据
      */
@@ -11,7 +12,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        console.log(options);
+
     },
 
     /**
@@ -61,18 +62,5 @@ Page({
      */
     onShareAppMessage: function () {
 
-    },
-
-    /**
-     * 页面滚动触发事件的处理函数
-     */
-    onPageScroll: function() {
-        console.log('滚动')
-    },
-
-    /**
-     * 页面尺寸改变时触发
-     */
-    onResize: function() {
     }
 })

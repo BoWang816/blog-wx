@@ -1,7 +1,0 @@
-<template name="foot">
-  <view class="page-foot">
-    <view class="index-desc" style="text-align:center;font-size:12px;bottom:20rpx;position:absolute;bottom:20rpx;width:100%">
-        我是页面公共模版
-    </view>
-  </view>
-</template>

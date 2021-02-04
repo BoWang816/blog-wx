@@ -1,7 +1,1 @@
 /* pages/tag/index.wxss */
-.tag-area {
-  padding: 15rpx;
-}
-.tag-item {
-  margin: 15rpx;
-}
