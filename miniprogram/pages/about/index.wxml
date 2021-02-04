@@ -4,5 +4,6 @@
 
 <template is="head" data="{{...headeInfo}}"/>
 <text>我是关于页面</text>
+<view>{{aboutInfo}}</view>
 <template is="foot" />
 

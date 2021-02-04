@@ -1,11 +1,8 @@
 <!--pages/tag/index.wxml-->
-<view class="tag-area">
-	<view>
+<view class="tags-categories-area">
+	<view class="tag-area">
 		<Text>标签：</Text>
-		<block wx:for="{{tags}}" 
-			wx:for-item="tag"
-			wx:key="tag">
-			
+		<block wx:for="{{tags}}" wx:for-item="tag" wx:key="tag">
 			<i-badge count="{{tag.count}}" overflow-count="100">
 				<view class="demo-badge">
 					<i-tag 

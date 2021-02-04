@@ -30,7 +30,9 @@ Page({
                 'content-type': 'application/json' // 默认值
             },
             success(res) {
-                that.setData({categories: res.data})
+                that.setData({
+                    categories: res.data
+                });
             }
         })
     },

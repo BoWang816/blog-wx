@@ -4,5 +4,4 @@
 }
 .tag-item {
   margin: 15rpx;
-  font-size: 16px;
 }
