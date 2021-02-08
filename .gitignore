@@ -10,6 +10,7 @@ $RECYCLE.BIN/
 .TemporaryItems
 .Trashes
 .idea
+.vscode
 # Node.js
 node_modules/
 cloudfunctions/callback/node_modules
