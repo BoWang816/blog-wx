@@ -1,0 +1,7 @@
+<!--components/tabbar/index.wxml-->
+<i-tab-bar current="{{ current }}" color="#5cadff" bindchange="handleChange" fixed="true">
+    <i-tab-bar-item
+        wx:for="{{menuData}}" wx:for-item="menu" key="{{menu.key}}"
+        icon="{{menu.key}}" current-icon="{{menu.key}}_fill" title="{{menu.title}}" dot="{{menu.key === 'homepage'}}">
+    </i-tab-bar-item>
+</i-tab-bar>

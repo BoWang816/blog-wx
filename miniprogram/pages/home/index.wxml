@@ -1,4 +1,57 @@
 <!--pages/home/index.wxml-->
-<text>我是首页</text>
+<view class="home-area">
+    <i-notice-bar wx:if="{{noticeContent}}" closable icon="systemprompt" loop backgroundcolor="#71bbf7"
+    speed="3000" color="#FFF">
+        {{noticeContent}}
+    </i-notice-bar>
+    <view class="swiper-area">
+        <swiper indicator-dots="true"
+            indicator-color="#F8F8F9"
+            indicator-active-color="#5CADDF"
+            autoplay="true"
+            circular="true"
+        >
+            <swiper-item wx:for="{{swiperList}}" wx:for-item="article" wx:key="title" >
+                <text class="swiper-title">{{article.title}}</text>
+                <image class="swiper-img" src="{{article.cover}}"/>
+            </swiper-item>
+        </swiper>
+    </view>
 
-<footer></footer>
+    <view class="search-area">
+        <i-input value="{{ value5 }}" placeholder="请输入标题" />
+    </view>
+
+    <view class="article-list">
+        <i-row wx:for="{{articleData.data}}" wx:for-item="article" wx:key="title" i-class="row-area">
+            <i-col span="8" i-class="col-area">
+                <image class="article-img" src="{{article.cover}}" alt="{{article.title}}"/>
+            </i-col>
+            <i-col span="16" i-class="col-area">
+                <view>
+                    <text class="title">
+                        {{article.title}}
+                        <i-icon type="time" />
+                    </text>
+                    <text class="description">{{article.description}}</text>
+                    <view class="article-info">
+                        <view class="date">
+                            <i-icon type="time" />
+                            {{article.date}}
+                        </view>
+                        <view>
+                            <i-icon type="label" />
+                            <block wx:for="{{article.tags}}" wx:for-item="tag">
+                                {{tag.name}}
+                            </block>
+                        </view>
+                    </view>
+                </view>
+            </i-col>
+        </i-row>
+        <i-load-more tip="正在加载" loading="{{ true }}" />
+        <i-divider content="加载已经完成,没有其他数据" color="#ed3f14" lineColor="#ed3f14"></i-divider>
+    </view>ss
+
+    <tabbar></tabbar>
+</view>

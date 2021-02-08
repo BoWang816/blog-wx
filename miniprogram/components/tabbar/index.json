@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "i-tab-bar": "../../UIComponents/tab-bar/index",
+        "i-tab-bar-item": "../../UIComponents/tab-bar-item/index"
+    }
+}

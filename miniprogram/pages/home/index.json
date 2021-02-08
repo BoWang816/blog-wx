@@ -1,5 +1,15 @@
 {
   "usingComponents": {
-    "footer": "../../components/footer"
+    "footer": "../../components/footer",
+    "tabbar": "../../components/tabbar",
+    "i-row": "../../UIComponents/row/index",
+    "i-col": "../../UIComponents/col/index",
+    "i-icon": "../../UIComponents/icon/index",
+    "i-card": "../../UIComponents/card/index",
+    "i-load-more": "../../UIComponents/load-more/index",
+    "i-divider": "../../UIComponents/divider/index",
+    "i-notice-bar": "../../UIComponents/notice-bar/index",
+    "i-input": "../../UIComponents/input/index",
+    "i-panel": "../../UIComponents/panel/index"
   }
 }
