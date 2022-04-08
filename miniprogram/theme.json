@@ -9,15 +9,7 @@
     "tabFontColor": "#000000",
     "tabSelectedColor": "#3cc51f",
     "tabBgColor": "#ffffff",
-    "tabBorderStyle": "black",
-    "homeIcon": "image/home_light.png",
-    "homeSelectedIcon": "image/home_select.png",
-    "rankingIcon": "image/ranking_light.png",
-    "rankingSelectedIcon": "image/ranking_select.png",
-    "classifyIcon": "image/classify_light.png",
-    "classifySelectedIcon": "image/classify_select.png",
-    "aboutIcon": "image/user_light.png",
-    "aboutSelectedIcon": "image/user_select.png"
+    "tabBorderStyle": "black"
   },
   "dark": {
     "navBgColor": "#191919",
@@ -29,14 +21,6 @@
     "tabFontColor": "#ffffff",
     "tabSelectedColor": "#51a937",
     "tabBgColor": "#191919",
-    "tabBorderStyle": "white",
-    "homeIcon": "image/home_light.png",
-    "homeSelectedIcon": "image/home_select.png",
-    "rankingIcon": "image/ranking_light.png",
-    "rankingSelectedIcon": "image/ranking_select.png",
-    "classifyIcon": "image/classify_light.png",
-    "classifySelectedIcon": "image/classify_select.png",
-    "aboutIcon": "image/user_light.png",
-    "aboutSelectedIcon": "image/user_select.png"
+    "tabBorderStyle": "white"
   }
 }

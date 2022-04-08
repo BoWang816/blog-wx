@@ -1,47 +1,45 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/home/index"
+    "pages/home/index",
+    "pages/classify/index",
+    "pages/about/index",
+    "pages/ranking/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "@navBgColor",
+    "navigationBarTitleText": "恪晨 Blog",
+    "navigationBarTextStyle": "@navTxtStyle",
+    "backgroundColor": "@bgColor",
+    "backgroundColorTop": "@bgColorTop",
+    "backgroundColorBottom": "@bgColorBottom"
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
+    "custom": true,
     "color": "@tabFontColor",
     "selectedColor": "@tabSelectedColor",
     "backgroundColor": "@tabBgColor",
-    "borderStyle": "black",
-    "list": [
-      {
+    "borderStyle": "@tabBorderStyle",
+    "list": [{
         "pagePath": "pages/home/index",
-        "text": "首页",
-        "iconPath": "@homeIcon",
-        "selectedIconPath": "@homeSelectedIcon"
+        "text": "首页"
       },
       {
         "pagePath": "pages/ranking/index",
-        "text": "排行",
-        "iconPath": "@rankingIcon",
-        "selectedIconPath": "@rankingSelectedIcon"
+        "text": "排行"
       },
       {
         "pagePath": "pages/classify/index",
-        "text": "分类",
-        "iconPath": "@classifyIcon",
-        "selectedIconPath": "@classifySelectedIcon"
+        "text": "分类"
       },
       {
         "pagePath": "pages/about/index",
-        "text": "关于",
-        "iconPath": "@aboutIcon",
-        "selectedIconPath": "@aboutSelectedIcon"
+        "text": "关于"
       }
     ]
   },
   "darkmode": true,
-  "themeLocation": "theme.json"
+  "themeLocation": "theme.json",
+  "usingComponents": {}
 }

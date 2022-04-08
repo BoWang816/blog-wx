@@ -1,2 +1,1 @@
-<!--pages/home/index.wxml-->
-<text>pages/home/index.wxml</text>
+<view class="home">pages/home</view>
