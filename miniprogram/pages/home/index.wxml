@@ -1,1 +1,46 @@
-<view class="home">pages/home</view>
+<view class="home-area">
+  <view class="swiper-area">
+    <swiper indicator-dots="true" indicator-color="#F8F8F9" indicator-active-color="#5CADDF" autoplay="true" circular="true">
+      <swiper-item wx:for="{{swiperList}}" wx:for-item="article" wx:key="title">
+        <text class="swiper-title">{{article.title}}</text>
+        <image class="swiper-img" src="{{article.cover}}" />
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="search">
+    <van-search custom-class="search-input" focus="true" value="{{ searchValue }}" shape="round" background="#4fc08d" placeholder="请输入搜索关键词" bind:search="onSearch" bind:cancel="onCancelSearch" />
+  </view>
+
+  <view class="recommand">
+    <Text>推荐文章</Text>
+    <view class="recommand-list">
+      <swiper class="swiper-list" vertical="true" indicator-color="#F8F8F9" indicator-active-color="#5CADDF" autoplay="true" circular="true">
+        <swiper-item wx:for="{{swiperList}}" wx:for-item="article" wx:key="title">
+          <text>{{article.title}}</text>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+
+  <view class="article-list">
+    <van-row custom-class="article-item" wx:for="{{articleData.data}}" wx:for-item="article" wx:key="title">
+      <van-col span="8">
+        <van-image custom-class="article-image" width="6rem" height="4rem" radius="4px" fit="cover" src="{{article.cover}}" alt="{{article.title}}" />
+      </van-col>
+      <van-col span="15" offset="1">
+        <view class="article-item-info">
+          <text class="article-title">
+            {{article.title}}
+          </text>
+          <block wx:for="{{article.updated || article.date}}" wx:for-index="index" wx:key="{{item}}" wx:if="{{index<10}}">
+            <text class='time'>{{item}}</text>
+          </block>
+          <block wx:for="{{article.tags}}" wx:for-item="tag">
+            <text class="tag">{{tag.name}}</text>
+          </block>
+        </view>
+      </van-col>
+    </van-row>
+  </view>
+</view>
