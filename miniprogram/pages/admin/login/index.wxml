@@ -1,0 +1,2 @@
+<cu-custom isCustom="{{true}}"> </cu-custom>
+<admin-login logo="{{logo}}" bind:loginSuf="loginSuf"></admin-login>

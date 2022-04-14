@@ -1,0 +1,177 @@
+<wxs src="../../utils/tools.wxs" module="tools" />
+<cu-custom bgColor="bg-theme" isCustom="{{true}}">
+  <view slot="content">文章详情</view>
+</cu-custom>
+<!-- 标题 -->
+<view class="text-cut title bg-white margin-0">
+  <view class="cu-tag bg-red light sm round" wx:if="{{articleDetails.topPriority==true}}">置顶</view>
+  {{articleDetails.title}}
+</view>
+<!-- 阅读、点赞、发表时间 -->
+<view class="padding flex text-center text-grey bg-white shadow-warp">
+  <view class="flex flex-sub flex-direction solid-right">
+    <view class="text-xs text-orange">{{articleDetails.visits}}</view>
+    <view class="margin-top-sm text-xs"> <text class="cuIcon-attentionfill"></text> 阅读</view>
+  </view>
+  <view class="flex flex-sub flex-direction solid-right" wx:if="{{articleDetails.wordCount}}">
+    <view class="text-xs text-blue">{{articleDetails.wordCount}}</view>
+    <view class="margin-top-sm text-xs"> <text class="cuIcon-rank"></text> 总字数</view>
+  </view>
+  <view class="flex flex-sub flex-direction">
+    <view class="text-xs text-green">{{tools.formatTime(articleDetails.createTime)}}</view>
+    <view class="margin-top-sm text-xs"> <text class="cuIcon-fork"></text> 发表时间</view>
+  </view>
+</view>
+<!-- 文章 -->
+
+<view class="margin-xs bg-white padding-xs radius shadow-lg">
+  <mp-html
+    lazy-load
+    scroll-table
+    selectable
+    tag-style="{{mpHtmlStyle.tagStyle}}"
+    container-style="{{mpHtmlStyle.containerStyle}}"
+    container-style="padding: 12px;font-size: 15px;line-height: 25px"
+    loading-img="{{mpHtmlStyle.loadingImage}}"
+    error-img="{{mpHtmlStyle.errorImage}}"
+    content="{{content}}"
+    domain="{{ApiBaseUrl}}"
+  />
+  <!-- 正文结束分割线 -->
+  <view class="line">
+    <span>正文结束</span>
+  </view>
+  <!-- 文章标签 -->
+  <view class="padding-sm flex flex-wrap">
+    <view
+      class="padding-xs"
+      wx:for="{{articleDetails.tags}}"
+      wx:for-item="item"
+      wx:key="index"
+      data-id="{{item.id}}"
+      bindtap="toTagPage"
+    >
+      <view class="cu-tag line-orange">{{item.name}}</view>
+    </view>
+  </view>
+</view>
+
+<!-- 返回顶端 -->
+<image class="returnTop" src="/images/icon/returntop.svg" bindtap="returnTop" hidden="{{!floorstatus}}"></image>
+
+<!-- 提示框 -->
+<view class="cu-modal {{msgFlag==true?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">温馨提示</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl"> {{msgData}} </view>
+  </view>
+</view>
+<!-- 生成海报 -->
+<painter style="position: fixed; top: -9999rpx" palette="{{palette}}" bind:imgOK="toSharePage" />
+<!-- 加载框 -->
+<view class="cu-load load-modal" wx:if="{{loadModal}}">
+  <image src="{{logo}}" class="png" mode="aspectFit"></image>
+  <view class="gray-text">加载中...</view>
+</view>
+<!-- 分享 -->
+<view class="cu-modal bottom-modal {{modalShare?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">分享文章</view>
+      <text class="cuIcon-close text-red margin-right" bindtap="hideModalshare"></text>
+    </view>
+    <view class="padding-xl">
+      <view class="article-share">
+        <button class="bg-white xl" open-type="share">
+          <image src="/images/icon/weixin.svg"></image>
+        </button>
+        <text>微信好友</text>
+      </view>
+      <view class="article-share" wx:if="{{shareIsOpen}}">
+        <button class="bg-white xl" bindtap="shareFriends">
+          <image src="/images/icon/poster.svg"></image>
+        </button>
+        <text>生成海报</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 评论 -->
+<view class="cu-bar bg-white">
+  <view class="action">
+    <text class="cuIcon-titles text-green"></text>
+    <text class="text-xl text-bold">评论</text>
+  </view>
+</view>
+<view class="bg-white" style="padding-bottom: calc(100rpx + env(safe-area-inset-bottom) / 2)">
+  <comment id="commentComponent" comments="{{comments}}" bind:addComment="addComment"> </comment>
+  <button
+    class="cu-btn block bg-blue margin-tb-sm lg margin-lr-xl"
+    wx:if="{{articleDetails.commentCount > comments.length}}"
+    data-id="{{id}}"
+    bindtap="toCommentPage"
+  >
+    查看全部评论 <text class="cuIcon-right"></text>
+  </button>
+</view>
+<!-- 下一页 -->
+<view class="text-df text-center text-grey {{isLoadComment==true?'':'hide'}}" bindtap="loadComment">加载更多</view>
+
+<!-- 微信登录 -->
+<authorize modalName="{{modalName}}" />
+<!-- 打开设置页面 -->
+<view class="cu-modal {{modalName=='settingModal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">需要您开启对应权限</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <button class="cu-btn block bg-blue margin-tb-sm lg" bindtap="openSetting">打开设置页面</button>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn line-green text-red" bindtap="hideModal">取消</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 发表评论、点赞、转发 -->
+<view class="cu-bar tabbar shadow foot" style="background: white">
+  <view class="search-form round comment" style="width: 400rpx">
+    <text class="cuIcon-write"></text>
+    <input
+      type="text"
+      placeholder="我来评论..."
+      bindtap="addCommentByComponent"
+      data-target="commentModal"
+      data-pid="0"
+      data-prompt="评论博文"
+      disabled="true"
+    />
+  </view>
+  <view class="action" data-id="{{id}}" bindtap="toPublishCommentPage">
+    <view class="cuIcon-cu-image">
+      <image src="/images/icon/comment.svg"></image>
+      <view class="cu-tag badge bg-white" wx:if="{{articleDetails.commentCount}}">{{articleDetails.commentCount}}</view>
+    </view>
+  </view>
+  <view class="action">
+    <view class="cuIcon-cu-image">
+      <image src="/images/icon/love.svg" bindtap="addStar" data-gid="{{id}}" data-lovecount="{{loveCount}}"></image>
+      <view class="cu-tag badge bg-white" wx:if="{{loveCount}}">{{loveCount}}</view>
+    </view>
+  </view>
+  <view class="action">
+    <view class="cuIcon-cu-image">
+      <image src="/images/icon/share.svg" bindtap="share" data-gid="{{id}}"></image>
+    </view>
+  </view>
+</view>

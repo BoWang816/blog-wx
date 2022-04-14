@@ -1,0 +1,50 @@
+/* 顶部样式 */
+.fixed-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1024;
+  background-color: #bdd2ef !important;
+  box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0.1);
+}
+
+.search-form {
+  /* background-color: rgb(175, 215, 237) !important; */
+  opacity: 0.4;
+  width: 100rpx;
+}
+
+.search {
+  background-color: white;
+  opacity: 0.4;
+}
+
+/* picker .picker {
+	line-height: 100rpx;
+	font-size: 28rpx;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+	text-align: right;
+} */
+
+/* picker::after {
+	font-family: "cuIcon";
+	display: block;
+	content: "\e6a3";
+	position: absolute;
+	font-size: 34rpx;
+	color: var(--grey);
+	line-height: 100rpx;
+	width: 60rpx;
+	text-align: center;
+	top: 0;
+	bottom: 0;
+	right: 120rpx;
+	margin: auto;
+} */
+
+.close {
+  display: inline-flex;
+  vertical-align: middle;
+}

@@ -1,31 +1,29 @@
-/*
- * Eslint config file
- * Documentation: https://eslint.org/docs/user-guide/configuring/
- * Install the Eslint extension before using this feature.
- */
 module.exports = {
+  root: true,
   env: {
-    es6: true,
     browser: true,
-    node: true,
+    commonjs: true,
+    es2021: true,
+    node: true
   },
-  ecmaFeatures: {
-    modules: true,
-  },
+  extends: ['standard', 'plugin:prettier/recommended'],
+  plugins: ['prettier'],
   parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
+    requireConfigFile: false,
+    ecmaVersion: 2021,
+    sourceType: 'module'
   },
+  rules: {},
   globals: {
-    wx: true,
     App: true,
     Page: true,
-    getCurrentPages: true,
-    getApp: true,
     Component: true,
-    requirePlugin: true,
-    requireMiniProgram: true,
-  },
-  // extends: 'eslint:recommended',
-  rules: {},
+    Behavior: true,
+    wx: true,
+    my: true,
+    swan: true,
+    getApp: true,
+    getCurrentPages: true,
+    getDate: true
+  }
 }

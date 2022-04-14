@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "admin-login": "../../../components/admin-login/index"
+  }
+}
