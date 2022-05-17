@@ -9,6 +9,7 @@
 
 
 
+### 源代码是：https://github.com/fuzui/GBlog-wx 的，我只是fork过来使用，希望大家多多支持原作者！！！
 
 
 GBlog-wx：微信小程序博客
