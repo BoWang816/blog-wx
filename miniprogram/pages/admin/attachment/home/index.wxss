@@ -15,3 +15,7 @@
   box-sizing: border-box;
   border: 10rpx solid blue;
 }
+
+.operate > button {
+  margin-right: 10rpx;
+}

@@ -1,11 +1,11 @@
 <scroll-view scroll-y class="scrollPage">
   <!-- 顶图 -->
-  <view class="UCenter-bg" style="background-image: url(https://cdn.fuzui.net/blog/home_1588604516121.jpg)">
+  <view class="UCenter-bg" style="background-image: url(https://nas.wangboweb.site:9201/upload/2022/06/IMG_0929.JPG)">
     <view class="text-xl"> {{blogTitle}} </view>
     <view class="margin-top-sm">
       <text>心之所向，即所向披靡</text>
     </view>
-    <image src="https://cdn.fuzui.net/tmp/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+    <image src="https://nas.wangboweb.site:9201/upload/2022/09/wave.gif" mode="scaleToFill" class="gif-wave"></image>
   </view>
   <!-- 宫格 -->
   <view class="cu-list grid col-4 no-border shadow-warp">

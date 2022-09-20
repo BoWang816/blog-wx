@@ -2,11 +2,14 @@
   padding: 20rpx 32rpx;
   flex: 1;
   margin: 0 20rpx;
-  max-width: 80%;
+  max-width: 20%;
 }
 textarea {
-  border: medium double blue;
+  height: 5rem !important;
+  border: 1rpx solid gray;
+  padding: 20rpx !important;
 }
+
 /* 日期 */
 .cu-timeline .cu-time {
   width: 300rpx;

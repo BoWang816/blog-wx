@@ -21,9 +21,9 @@
           </picker>
         </view>
         <view class="search padding-xs radius" style="width: 300rpx">
-          <picker bindchange="teamPickerChange" value="{{index}}" range="{{teamPicker}}" range-key="value">
+          <picker bindchange="teamPickerChange" value="{{index}}" range="{{teams}}">
             <view class="picker text-center">
-              {{teamValue}}
+              {{team}}
               <text class="cuIcon-unfold fr"></text>
             </view>
           </picker>
@@ -76,7 +76,6 @@
       wx:if="{{currentPhoto.url}}"
       style="{{'background-image: url(' + tools.convertImageUrl(ApiBaseUrl, currentPhoto.url) + ');background-size: 680rpx auto; height: ' + currentPhoto.height*680/750 + 'rpx;'}}"
       bindtap="preview"
-      data-url="{{tools.convertImageUrl(ApiBaseUrl, currentPhoto.urL)}}"
     >
       <view class="bg-shadeBottom padding flex-sub">
         <view class="cu-capsule fl" wx:if="{{currentPhoto.team}}">

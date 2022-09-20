@@ -1,13 +1,13 @@
 <wxs src="../../../utils/tools.wxs" module="tools" />
 <view wx:if="{{isLogin}}">
   <!-- 顶图 -->
-  <view class="UCenter-bg" style="background-image: url(https://cdn.fuzui.net/blog/home_1588604516121.jpg)">
+  <view class="UCenter-bg" style="background-image: url(https://nas.wangboweb.site:9201/upload/2022/06/IMG_0929.JPG)">
     <image src="{{user.avatar}}" class="avatar" mode="widthFix"></image>
     <view class="text-xl"> {{user.nickname}} </view>
     <view class="margin-top-sm">
       <text>{{user.description}}</text>
     </view>
-    <image src="https://cdn.fuzui.net/tmp/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+    <image src="https://nas.wangboweb.site:9201/upload/2022/09/wave.gif" mode="scaleToFill" class="gif-wave"></image>
   </view>
   <scroll-view scroll-y class="scrollPage">
     <!-- 宫格 -->

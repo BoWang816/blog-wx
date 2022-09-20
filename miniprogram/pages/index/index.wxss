@@ -72,7 +72,6 @@
 }
 
 .ali-font {
-  font-family: Ali, Helvetica Neue, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 40rpx;
   text-align: center;

@@ -3,7 +3,7 @@
   <view slot="content">附件</view>
 </cu-custom>
 <view class="cu-bar bg-white fixed" style="top:{{CustomBar}}px;">
-  <view class="margin-tb-sm text-center padding">
+  <view class="margin-tb-sm text-center padding operate">
     <button class="cu-btn bg-blue shadow" bindtap="showModal" data-target="uploadModal">
       <text class="cuIcon-upload"></text>上传
     </button>

@@ -1315,10 +1315,6 @@ button.icon.lg {
 	text-align: center
 }
 
-.cu-list.menu-avatar>.cu-item .action view+view {
-	margin-top: 10rpx
-}
-
 .cu-list.menu-avatar.comment>.cu-item .content {
 	position: relative;
 	left: 0;
