@@ -49,7 +49,9 @@ App({
     }
   },
   async getThemeSettings() {
-    let settings
+    let settings = {
+      'random_image': ''
+    };
     // 是否使用缓存判断
     if (Config.themeSettingsCache) {
       settings = wx.getStorageSync(STORAGE_KEY.themeSettings)
@@ -57,8 +59,6 @@ App({
         settings = await getThemeSettingsById('gblogwx_config')
         wx.setStorageSync(STORAGE_KEY.themeSettings, settings)
       }
-    } else {
-      settings = {}
     }
 
     // 博客名和logo处理

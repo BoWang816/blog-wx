@@ -145,7 +145,7 @@
 
 <!-- 发表评论、点赞、转发 -->
 <view class="cu-bar tabbar shadow foot" style="background: white">
-  <view class="search-form round comment" style="width: 400rpx">
+  <!-- todo 暂停 <view class="search-form round comment" style="width: 400rpx">
     <text class="cuIcon-write"></text>
     <input
       type="text"
@@ -156,7 +156,7 @@
       data-prompt="评论博文"
       disabled="true"
     />
-  </view>
+  </view> -->
   <view class="action" data-id="{{id}}" bindtap="toPublishCommentPage">
     <view class="cuIcon-cu-image">
       <image src="/images/icon/comment.svg"></image>
@@ -169,9 +169,9 @@
       <view class="cu-tag badge bg-white" wx:if="{{loveCount}}">{{loveCount}}</view>
     </view>
   </view>
-  <view class="action">
+  <!-- <view class="action">
     <view class="cuIcon-cu-image">
       <image src="/images/icon/share.svg" bindtap="share" data-gid="{{id}}"></image>
     </view>
-  </view>
+  </view> -->
 </view>
