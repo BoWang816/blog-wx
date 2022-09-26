@@ -109,6 +109,7 @@
     </view>
     <view class="padding-xl">
       <textarea
+        class="replay-content"
         maxlength="-1"
         bindinput="commentInput"
         placeholder="写下要回复的内容"

@@ -25,7 +25,7 @@
         <text class="cuIcon-timefill text-gray"></text> {{tools.getDateDiff(item.createTime)}}
       </view>
       <view class="action">
-        <!-- <text class="cuIcon-edit text-blue" bindtap="showModal" data-target="editModal" data-index="{{index}}"></text> -->
+        <text class="cuIcon-edit text-blue" bindtap="showModal" data-target="editModal" data-index="{{index}}"></text>
         <text
           class="cuIcon-delete text-red"
           bindtap="deleteJournal"

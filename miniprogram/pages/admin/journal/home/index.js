@@ -194,6 +194,14 @@ Page({
   },
 
   showModal(e) {
+    // todo 不能更改
+    wx.showToast({
+      title: '啊哦,不能更改',
+      duration: 1200,
+      mask: true,
+      image: '/images/prompt/fail.svg'
+    })
+    return;
     const that = this
     const index = e.currentTarget.dataset.index
     const journalList = that.data.journalList

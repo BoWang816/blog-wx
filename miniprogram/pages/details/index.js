@@ -275,6 +275,15 @@ Page({
     }
   },
   addCommentByComponent(e) {
+    // todo 不能评论
+    wx.showToast({
+      title: '啊哦,不能评论',
+      duration: 1200,
+      mask: true,
+      image: '/images/prompt/fail.svg'
+    })
+    return;
+
     this.selectComponent('#commentComponent').addComment(e)
   },
   /**

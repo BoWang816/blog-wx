@@ -1,3 +1,6 @@
+.replay-content {
+  text-align: left;
+}
 .cu-card.article {
   display: block;
 }
