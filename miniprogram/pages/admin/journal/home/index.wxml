@@ -2,7 +2,7 @@
 <cu-custom bgColor="bg-theme" isCustom="{{true}}">
   <view slot="content">速记</view>
 </cu-custom>
-<!-- <view class="bg-white padding radius shadow-blur shadow-lg">
+<view class="bg-white padding radius shadow-blur shadow-lg">
   <view class="text-blue text-center text-xxl padding"> </view>
   <view class="cu-card dynamic no-card">
     <view class="cu-form-group">
@@ -16,7 +16,7 @@
       <button class="cu-btn bg-blue shadow-blur" bindtap="addJournal">保存</button>
     </view>
   </view>
-</view> -->
+</view>
 
 <view class="cu-timeline margin-top">
   <block wx:for="{{journalList}}" wx:for-item="item" wx:key="index">
