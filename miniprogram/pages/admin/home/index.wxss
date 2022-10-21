@@ -1,6 +1,6 @@
 .UCenter-bg {
   background-size: cover;
-  height: 397rpx;
+  height: 290rpx;
   display: flex;
   justify-content: center;
   padding-top: 40rpx;
@@ -17,8 +17,8 @@
 }
 
 .UCenter-bg .avatar {
-  width: 150rpx;
-  height: 150rpx;
+  width: 100rpx;
+  height: 100rpx;
   border-radius: 50%;
 }
 
@@ -36,7 +36,11 @@
   display: inline-block;
   margin-left: 8rpx;
   margin-right: 12rpx;
-  width: 1.3em;
-  height: 1.3em;
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
+}
+
+.dialog-list {
+  margin-bottom: 42px;
 }

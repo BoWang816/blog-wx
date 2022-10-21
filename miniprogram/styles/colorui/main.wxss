@@ -922,8 +922,8 @@ button.icon.lg {
 .cu-tag[class*="cuIcon-"] {
 	width: 32rpx;
 	height: 32rpx;
-	top: -4rpx;
-	right: -4rpx;
+	top: -10rpx;
+	right: -10rpx;
 }
 
 /* ==================

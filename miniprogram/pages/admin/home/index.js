@@ -4,11 +4,13 @@ import { adminGetPostComment } from '../../../services/api/admin/post'
 import { adminGetSheetComment } from '../../../services/api/admin/sheet'
 import { STORAGE_KEY } from '../../../services/const-data/const-data'
 import { THEME_SETTING_KEY } from '../../../services/const-data/theme-setting-key'
+import { ApiBaseUrl } from '../../../config/api.js'
 
 const app = getApp()
 
 Page({
   data: {
+    url: ApiBaseUrl,
     logo: '',
     statistics: {},
     isLogin: true,

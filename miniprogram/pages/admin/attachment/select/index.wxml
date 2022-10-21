@@ -5,8 +5,8 @@
 <view class="cu-bar bg-white fixed" style="top:{{CustomBar}}px;">
   <view class="margin-tb-sm text-center padding">
     <button class="cu-btn line-grey shadow" bindtap="returnPage"><text class="cuIcon-back"></text>返回</button>
-    <button class="cu-btn bg-blue shadow margin-left-xl" bindtap="submitSelect">
-      <text class="cuIcon-check"></text>确定
+    <button class="cu-btn bg-blue shadow margin-left-sm" bindtap="submitSelect">
+      确定
     </button>
   </view>
 </view>
