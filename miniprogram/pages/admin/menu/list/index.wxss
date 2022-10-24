@@ -2,3 +2,7 @@
 .cu-form-group > .title {
   width: 220rpx;
 }
+
+.padding-add {
+  padding: 10rpx 20rpx;
+}

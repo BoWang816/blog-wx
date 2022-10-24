@@ -1,9 +1,9 @@
 .UCenter-bg {
   background-size: cover;
-  height: 290rpx;
+  height: 450rpx;
   display: flex;
   justify-content: center;
-  padding-top: 40rpx;
+  padding-top: 150rpx;
   overflow: hidden;
   position: relative;
   flex-direction: column;
@@ -42,5 +42,5 @@
 }
 
 .dialog-list {
-  margin-bottom: 42px;
+  margin-bottom: 130rpx;
 }

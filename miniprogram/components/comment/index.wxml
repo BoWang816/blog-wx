@@ -36,7 +36,7 @@
           </view>
           <view class="flex justify-between">
             <view class="text-gray text-df">{{tools.tsFormatTime(comment.createTime)}}</view>
-            <view>
+            <!-- <view>
               <text
                 class="cuIcon-comment text-gray margin-left-sm"
                 bindtap="addComment"
@@ -44,7 +44,7 @@
                 data-pid="{{comment.id}}"
                 data-pname="{{comment.author}}"
               ></text>
-            </view>
+            </view> -->
           </view>
           <!-- 子评论 -->
           <view
@@ -85,7 +85,7 @@
                   domain="{{ApiBaseUrl}}"
                 />
               </view>
-              <view class="flex justify-between">
+              <!-- <view class="flex justify-between">
                 <view class="text-gray text-df">{{tools.tsFormatTime(children.createTime)}}</view>
                 <view>
                   <text
@@ -96,7 +96,7 @@
                     data-pname="{{children.author}}"
                   ></text>
                 </view>
-              </view>
+              </view> -->
             </view>
           </view>
         </view>

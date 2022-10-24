@@ -74,9 +74,9 @@
 
 <view class="cu-modal bottom-modal {{modalName=='selectModal'?'show':''}}">
   <view class="cu-dialog">
-    <view class="cu-bar bg-white">
+    <view class="cu-bar bg-white" bindtap="hideModal">
       <view class="action text-blue">信息修改</view>
-      <view class="action text-blue" bindtap="hideModal"><text class="cuIcon-unfold text-blue"></text></view>
+      <view class="action text-blue"><text class="cuIcon-unfold text-blue"></text></view>
     </view>
     <view class="cu-list menu text-left">
       <view class="cu-item arrow" bindtap="toSettingPage" bindtap="showModal" data-target="selectAvatarModal">

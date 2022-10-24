@@ -1,9 +1,9 @@
 .UCenter-bg {
   background-size: cover;
-  height: 397rpx;
+  height: 450rpx;
   display: flex;
   justify-content: center;
-  padding-top: 40rpx;
+  padding-top: 120rpx;
   overflow: hidden;
   position: relative;
   flex-direction: column;

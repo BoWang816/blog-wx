@@ -18,7 +18,7 @@
 </view>
 <!-- 发表评论、点赞、转发 -->
 <view class="cu-bar tabbar shadow foot" style="background: white">
-  <view class="search-form round comment" style="width: 400rpx">
+  <!-- <view class="search-form round comment" style="width: 400rpx">
     <text class="cuIcon-write"></text>
     <input
       type="text"
@@ -28,7 +28,7 @@
       data-pid="0"
       disabled="true"
     />
-  </view>
+  </view> -->
   <view class="action">
     <view class="cuIcon-cu-image">
       <image src="/images/icon/comment.svg"></image>

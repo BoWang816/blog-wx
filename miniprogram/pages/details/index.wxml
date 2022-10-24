@@ -145,18 +145,6 @@
 
 <!-- 发表评论、点赞、转发 -->
 <view class="cu-bar tabbar shadow foot" style="background: white">
-  <view class="search-form round comment" style="width: 400rpx">
-    <text class="cuIcon-write"></text>
-    <input
-      type="text"
-      placeholder="我来评论..."
-      bindtap="addCommentByComponent"
-      data-target="commentModal"
-      data-pid="0"
-      data-prompt="评论博文"
-      disabled="true"
-    />
-  </view>
   <view class="action" data-id="{{id}}" bindtap="toPublishCommentPage">
     <view class="cuIcon-cu-image">
       <image src="/images/icon/comment.svg"></image>

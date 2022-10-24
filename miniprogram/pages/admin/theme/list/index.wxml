@@ -48,9 +48,9 @@
 
 <!-- 更多 -->
 <view class="cu-modal bottom-modal {{modalName=='moreModal'?'show':''}}">
-  <view class="cu-dialog">
+  <view class="cu-dialog dialog-list">
     <view class="cu-bar bg-white">
-      <view class="action text-blue"></view>
+      <view class="action text-blue">主题更新</view>
       <view class="action text-blue" bindtap="hideModal"><text class="cuIcon-unfold text-blue"></text></view>
     </view>
     <view class="cu-list menu text-center">
@@ -94,7 +94,7 @@
       </view>
     </view>
     <view class="cu-form-group text-left solid solid-bottom">
-      <input bindinput="urlInput" />
+      <input bindinput="urlInput" placeholder="请输入远程Github地址" />
     </view>
 
     <view class="cu-bar bg-white justify-end">

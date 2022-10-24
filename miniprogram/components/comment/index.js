@@ -50,14 +50,6 @@ Component({
   },
   methods: {
     addComment(e) {
-      // todo 不能留言
-      wx.showToast({
-        title: '啊哦,不能留言',
-        duration: 1200,
-        mask: true,
-        image: '/images/prompt/fail.svg'
-      })
-      return;
       const detail = {
         modalName: e.currentTarget.dataset.target,
         commmentPid: e.currentTarget.dataset.pid,

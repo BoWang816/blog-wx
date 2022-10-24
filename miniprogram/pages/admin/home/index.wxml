@@ -41,12 +41,12 @@
           <text class="text-red text-sm" wx:if="{{noticeCount != 0}}">有 {{noticeCount}} 条消息待处理</text>
         </view>
       </view>
-      <!-- <view class="cu-item arrow" bindtap="toJournalPage">
+      <view class="cu-item arrow" bindtap="toJournalPage">
         <view class="content">
           <text class="cuIcon-writefill text-grey"></text>
           <text class="text-grey">速记</text>
         </view>
-      </view> -->
+      </view>
       <view class="cu-item arrow" bindtap="toPhotosPage">
         <view class="content">
           <text class="cuIcon-camera text-olive"></text>
@@ -91,10 +91,10 @@
 <admin-login wx:if="{{!isLogin}}" logo="{{logo}}" bind:loginSuf="loginSuf"></admin-login>
 <!-- 文章管理 -->
 <view class="cu-modal bottom-modal {{modalName=='articleModal'?'show':''}}">
-  <view class="cu-dialog">
-    <view class="cu-bar bg-white">
-      <view class="action text-blue"></view>
-      <view class="action text-blue" bindtap="hideModal"><text class="cuIcon-unfold text-blue"></text></view>
+  <view class="cu-dialog dialog-list">
+    <view class="cu-bar bg-white" bindtap="hideModal">
+      <view class="action text-blue">文章管理</view>
+      <view class="action text-blue"><text class="cuIcon-unfold text-blue"></text></view>
     </view>
     <view class="cu-list menu text-left">
       <view class="cu-item arrow" bindtap="toArticlePage">
@@ -124,9 +124,9 @@
 <!-- 外观 -->
 <view class="cu-modal bottom-modal {{modalName=='themeModal'?'show':''}}">
   <view class="cu-dialog dialog-list">
-    <view class="cu-bar bg-white">
+    <view class="cu-bar bg-white" bindtap="hideModal">
       <view class="action text-blue">外观设置</view>
-      <view class="action text-blue" bindtap="hideModal"><text class="cuIcon-unfold text-blue"></text></view>
+      <view class="action text-blue"><text class="cuIcon-unfold text-blue"></text></view>
     </view>
     <view class="cu-list menu text-left">
       <view class="cu-item arrow" bindtap="toThemePage">
@@ -146,9 +146,9 @@
 <!-- 系统设置 -->
 <view class="cu-modal bottom-modal {{modalName=='settingsModal'?'show':''}}">
   <view class="cu-dialog dialog-list">
-    <view class="cu-bar bg-white">
+    <view class="cu-bar bg-white" bindtap="hideModal">
       <view class="action text-blue">系统设置</view>
-      <view class="action text-blue" bindtap="hideModal"><text class="cuIcon-unfold text-blue"></text></view>
+      <view class="action text-blue"><text class="cuIcon-unfold text-blue"></text></view>
     </view>
     <view class="cu-list menu text-left">
       <view class="cu-item arrow" bindtap="toSettingPage">

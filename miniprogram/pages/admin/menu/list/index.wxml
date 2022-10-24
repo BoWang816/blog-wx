@@ -2,12 +2,12 @@
   <view slot="content">菜单管理</view>
 </cu-custom>
 <view class="cu-bar bg-white fixed" style="top:{{CustomBar}}px;">
-  <view class="margin-tb-sm text-center padding">
+  <view class="margin-tb-sm text-center padding-add">
     <button class="cu-btn bg-blue shadow" bindtap="showModal" data-target="addModal">新增</button>
   </view>
 </view>
 
-<view class="cu-list menu" style="margin-top: 200rpx">
+<view class="cu-list menu" style="margin-top: 160rpx">
   <view class="cu-item" wx:for="{{menuList}}" wx:key="index">
     <view class="content padding-tb-sm">
       <view> <text class="cuIcon-title text-cyan"></text>{{item.name}} </view>
