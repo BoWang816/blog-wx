@@ -6,7 +6,7 @@
     <view class="cu-avatar round" style="background-image:url({{userInfo.avatarUrl}});"></view>
     <view class="content"> {{title}} </view>
   </view>
-  <form>
+  <!-- <form>
     <view class="cu-form-group">
       <textarea
         bindinput="commentInput"
@@ -25,5 +25,5 @@
       <switch class="orange radius sm" bindchange="isAllowNotification" checked="{{notifiStatus}}"></switch>
     </view>
     <button class="cu-btn block bg-blue margin-tb-sm lg margin-lr-xl" bindtap="writeComment">提交</button>
-  </form>
+  </form> -->
 </view>
