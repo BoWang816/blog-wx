@@ -20,12 +20,12 @@ Component({
         selectedIconPath: '/images/icon/type-hover.svg',
         text: '分类'
       },
-      {
-        pagePath: '/pages/photos/home/index',
-        iconPath: '/images/icon/photo.svg',
-        selectedIconPath: '/images/icon/photo-hover.svg',
-        text: '光影'
-      },
+      // {
+      //   pagePath: '/pages/photos/home/index',
+      //   iconPath: '/images/icon/photo.svg',
+      //   selectedIconPath: '/images/icon/photo-hover.svg',
+      //   text: '光影'
+      // },
       {
         pagePath: '/pages/about/home/index',
         iconPath: '/images/icon/about.svg',
